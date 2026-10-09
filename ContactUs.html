@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Southern Ontario Collegiate for any inquiries or information regarding admissions, courses, and support.">
+    <title>Contact Us - Southern Ontario Collegiate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .contact-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #003366;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0055cc;
+        }
+        .info {
+            margin-top: 20px;
+        }
+        .info h3 {
+            margin-bottom: 10px;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Southern Ontario Collegiate</h1>
+</header>
+
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Please fill out the form below with any questions or concerns.</p>
+
+    <form action="submit_form.php" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="info">
+        <h3>Contact Information</h3>
+         <p><strong>Email: info@mysoc.ca</p>
+        <p>Phone: +1-905-546-1500 </p>
+        <p>Address: <a href="https://www.google.com/maps/place/Southern+Ontario+Collegiate/@43.2579529,-79.8699261,17z/data=!3m2!4b1!5s0x882c9b845d26a8a1:0x8ef663826e90a5f9!4m6!3m5!1s0x882c9b7de4dbdf59:0x79715e2e48821564!8m2!3d43.257949!4d-79.8673512!16s%2Fg%2F1tdy52yv?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D">28 Rebecca St., Hamilton, Ontario, Canada L8R 1B4</a></p>
+
+        <p>Office Hours:</strong> Mon-Fri, 9:00 AM - 5:00 PM</p>
+    </div>
+</div>
+<a href="Website.html"><center><img src="SOC-logo-e1685421327138.png" alt="Image description" class="right-image"></center></a>
+
+</body>
+</html>

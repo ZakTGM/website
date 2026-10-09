@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOC Student Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label.star {
+            font-size: 30px;
+            color: gray;
+            cursor: pointer;
+        }
+
+        input[type="radio"]:checked ~ label.star {
+            color: gold;
+        }
+
+        input[type="radio"]:checked + label.star {
+            color: gold;
+        }
+
+        .star:hover, .star:hover ~ .star {
+            color: gold;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>SOC Student Survey</h1>
+    <p>We value your feedback. Please rate your experience at Southern Ontario Collegiate.</p>
+    
+    <form action="submit-survey.php" method="post">
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name">
+
+        <label for="course">Rate the Service:</label>
+        <div class="rating">
+            <input type="radio" id="star5-course" name="rating-course" value="5">
+            <label for="star5-course" class="star">&#9733;</label>
+
+            <input type="radio" id="star4-course" name="rating-course" value="4">
+            <label for="star4-course" class="star">&#9733;</label>
+
+            <input type="radio" id="star3-course" name="rating-course" value="3">
+            <label for="star3-course" class="star">&#9733;</label>
+
+            <input type="radio" id="star2-course" name="rating-course" value="2">
+            <label for="star2-course" class="star">&#9733;</label>
+
+            <input type="radio" id="star1-course" name="rating-course" value="1">
+            <label for="star1-course" class="star">&#9733;</label>
+        </div>
+
+        <label for="facility">Rate the Website:</label>
+        <div class="rating">
+            <input type="radio" id="star5-facility" name="rating-facility" value="5">
+            <label for="star5-facility" class="star">&#9733;</label>
+
+            <input type="radio" id="star4-facility" name="rating-facility" value="4">
+            <label for="star4-facility" class="star">&#9733;</label>
+
+            <input type="radio" id="star3-facility" name="rating-facility" value="3">
+            <label for="star3-facility" class="star">&#9733;</label>
+
+            <input type="radio" id="star2-facility" name="rating-facility" value="2">
+            <label for="star2-facility" class="star">&#9733;</label>
+
+            <input type="radio" id="star1-facility" name="rating-facility" value="1">
+            <label for="star1-facility" class="star">&#9733;</label>
+        </div>
+
+        <label for="feedback">Additional Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your comments here..."></textarea>
+
+        <input type="submit" value="Submit Survey">
+		<a href="Website.html"><img src="SOC-logo-e1685421327138.png" alt="Image description" class="right-image"></a>
+    </form>
+</div>
+
+</body>
+</html>
